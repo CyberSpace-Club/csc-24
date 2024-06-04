@@ -1,0 +1,376 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url("https://fonts.googleapis.com/css2?family=Kodchasan&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+} */
+
+.nav {
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px 0 rgba(79, 80, 90, 0.283);
+  /* backdrop-filter: blur(9px);
+  -webkit-backdrop-filter: blur(9px); */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+/* Footer */
+.contact h6 {
+  font-size: 1rem;
+}
+
+.aboutbg {
+  background-image: url(../assets/1.png);
+}
+
+.whatbg {
+  background-image: url(../assets/3.png);
+}
+
+.coveragebg {
+  background-image: url(../assets/3.png);
+}
+.newsbg {
+  background-image: url(../assets/3.png);
+}
+
+.landingNewsletter > *:not(:first-child):not(:nth-child(2)):not(:nth-child(3)) {
+  display: none;
+}
+
+.heads {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #e5d6b7;
+  -webkit-text-fill-color: #000000;
+  letter-spacing: 1px;
+  font-family: Arial Black, Gadget, sans-serif;
+}
+
+.senior {
+  font-size: 60px;
+  -webkit-text-stroke-width: 4.5px;
+  -webkit-text-stroke-color: #e5d6b7;
+  -webkit-text-fill-color: #000000;
+  letter-spacing: 1px;
+  font-family: Arial Black, Gadget, sans-serif;
+}
+
+.fc {
+  font-size: 45px;
+  -webkit-text-stroke-width: 2.4px;
+  -webkit-text-stroke-color: #e5d6b7;
+  -webkit-text-fill-color: #000000;
+  letter-spacing: 1px;
+  font-family: Arial Black, Gadget, sans-serif;
+}
+.university {
+  font-size: xx-large;
+}
+
+@media (max-width: 620px) {
+  .navList {
+    display: none;
+  }
+  .lglogo {
+    display: none;
+  }
+  .nlDisplay {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* .person-img {
+    display: none;
+  } */
+}
+
+@media (min-width: 620px) {
+  .mdlogo {
+    display: none;
+  }
+}
+
+.pageSeparator {
+  background: linear-gradient(to right, black, #ff8c32, black);
+  height: 0.1rem;
+}
+
+.ExecGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 620px) {
+  .nlDisplay {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.circles {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(243, 106, 21, 0.2);
+  animation: animate 5s linear infinite;
+  /* // bottom: -150px; */
+  top: 10rem;
+  left: -10rem;
+}
+
+.circles li:nth-child(1) {
+  /* // left: 25%; */
+  top: 25rem;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  /* // left: 10%; */
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  /* // left: 70%; */
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  /* // left: 40%; */
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  /* // left: 65%; */
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  /* // left: 75%; */
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  width: 25px;
+  height: 25px;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  width: 150px;
+  height: 150px;
+  animation-delay: 2s;
+  animation-duration: 11s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateX(2000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+.team-handle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team-handle .insta {
+  margin-right: 1rem;
+}
+/* Footer */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.social-media .insta {
+  margin-right: 1rem;
+}
+
+/* Hamburger */
+.hamburger-menu {
+  display: none;
+}
+.coverage-video {
+  height: 300px;
+  width: 600px;
+}
+@media screen and (max-width: 620px) {
+  .coverage-video {
+    height: 180px;
+    width: 360px;
+  }
+  .hamburger-menu {
+    display: block;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: 50%;
+    right: -65%;
+    transform: translate(100%, -50%);
+    z-index: 2;
+  }
+
+  .bar {
+    width: 24px;
+    height: 3px;
+    background-color: #ff8c32;
+    transition: 0.3s ease-in-out;
+  }
+
+  .open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .hamburger-menu {
+    position: relative;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ff8c32;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .open .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-7px, 6px);
+  }
+
+  .open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -6px);
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(79, 80, 90, 0.283);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: none;
+    transition: 0.3s;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu li {
+    padding: 15px;
+  }
+  .menu li:hover {
+    box-shadow: 0 6px 24px 0 rgba(79, 80, 90, 0.283);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+  }
+
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .menu a:hover {
+    color: #ff8c32;
+  }
+}
+/* Creted this class just for shadow box and a bit of hover effect */
+
+.self-newsletter {
+  border-color: #ff8c32;
+  box-shadow: 2px 2px 5px 0px #ff8c32;
+
+  transform: perspective(1000px) rotateY(4deg);
+
+  transition: all 0.5s ease;
+}
+
+.self-newsletter:hover {
+  transform: perspective(1000px) rotateY(0deg);
+  box-shadow: 8px 8px 15px 0px #ff8c32;
+}
