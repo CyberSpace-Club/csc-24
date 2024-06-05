@@ -63,10 +63,6 @@ import Sidharth from "@/assets/team/people/exec/Sidharth.jpg";
 import Sarthak from "@/assets/team/people/exec/Sarthak.jpg";
 import AnantSharma from "@/assets/team/people/exec/AnantSharma.jpg";
 
-
-
-
-
 import Image from "next/image";
 
 const TeamPage = () => {
@@ -75,7 +71,7 @@ const TeamPage = () => {
       className="grid grid-flow-row justify-center items-center pt-[90px] text-[#eeeeee]
     g:bg-slate-800
     d:bg-slate-600
-    m:bg-slate-400"
+    m:bg-slate-400 overflow-x-hidden"
     >
       <div className="justify-self-center">
         <Image
@@ -111,8 +107,8 @@ const TeamPage = () => {
       </div>
       {/* Fac cooredinators */}
       <div
-        className="grid grid-flow-row items-center justify-evenly mt-3 mb-12 px-12
-      md:grid-cols-7 w-[100vw] sm:grid-cols-2 grid-cols-1"
+        className="w-[100vw] grid grid-flow-row items-center justify-evenly mt-3 mb-12 px-12
+      md:grid-cols-7 sm:grid-cols-2 grid-cols-1"
       >
         <Image
           height={300}
@@ -301,7 +297,7 @@ const TeamPage = () => {
           HEADS
         </h1>
         <div className="gap-6 grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 justify-evenly w-[100vw]">
-        <div>
+          <div>
             <Person
               img={AryanShah}
               name="Aryan Shah"
@@ -314,7 +310,7 @@ const TeamPage = () => {
             <Person
               img={Kartikey}
               name="Kumar Kartikay"
-              post="Community Manager" 
+              post="Community Manager"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -355,7 +351,7 @@ const TeamPage = () => {
               link2="https://instagram.com/dhruvbansal28?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
             />
           </div>
-          
+
           <div>
             <Person
               img={anurag}
@@ -410,11 +406,11 @@ const TeamPage = () => {
               link2="https://www.linkedin.com/in/aditi-jain-09ab53244"
             />
           </div>
-          
+
           <div>
             <Person
               img={HarshKamra}
-              name="Harsh Kamra" 
+              name="Harsh Kamra"
               post="Joint Head of Graphic Design"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
@@ -442,7 +438,7 @@ const TeamPage = () => {
             <Person
               img={RanojitPalit}
               name="Ranojit Palit"
-              post="Joint Head of Curations" 
+              post="Joint Head of Curations"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -451,7 +447,7 @@ const TeamPage = () => {
             <Person
               img={Sarthak}
               name="Sarthak"
-              post="Head of Finance Registration" 
+              post="Head of Finance Registration"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -460,7 +456,7 @@ const TeamPage = () => {
             <Person
               img={Sidharth}
               name="Siddharth Pahwa"
-              post="Head of Corporate Affairs" 
+              post="Head of Corporate Affairs"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -485,14 +481,14 @@ const TeamPage = () => {
           </div>
           <div>
             <Person
-              img={Pratyaksh} 
+              img={Pratyaksh}
               name="Pratyaksh Singhal"
               post="Joint Logistics Head"
               link1="https://instagram.com/_pratyaksh01?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
               link2="https://www.linkedin.com/in/pratyaksh-singhal-491799236"
             />
           </div>
-          
+
           <div>
             <Person
               img={Navneet}
@@ -548,7 +544,6 @@ const TeamPage = () => {
             />
           </div>
           {/* ADD MORE HEADS */}
-          
         </div>
       </div>
       <div className="pageSeparator" />
@@ -570,7 +565,7 @@ const TeamPage = () => {
             <Person
               img={DhruvRathee}
               name="Dhruv Rathee"
-              post="Senior Coordinator Events" 
+              post="Senior Coordinator Events"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -579,7 +574,7 @@ const TeamPage = () => {
             <Person
               img={SheryaGupta}
               name="Shreya Gupta"
-              post="Senior Coordinator Marekting" 
+              post="Senior Coordinator Marekting"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -588,7 +583,7 @@ const TeamPage = () => {
             <Person
               img={ParthSarrathi}
               name="Parth Sarrathi"
-              post="Senior Coordinator Logistics" 
+              post="Senior Coordinator Logistics"
               link1="https://www.linkedin.com/"
               link2="https://github.com/"
             />
@@ -639,8 +634,7 @@ const TeamPage = () => {
               link2="https://instagram.com/ananyaaa_16?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
             />
           </div>
-          
-          
+
           <div>
             <Person
               img={AnantSharma}

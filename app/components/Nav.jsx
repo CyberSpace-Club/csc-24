@@ -18,7 +18,7 @@ const Navbar = () => {
       </div>
       <ul className="flex col-span-3 justify-self-end justify-center items-center navList self-end">
         <li
-          className="px-[12px] hover:text-[#fe8d32] hover:border-b border-[#fe8d32] rounded-sm"
+          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`home`}
         >
           <Link href="/">
@@ -27,7 +27,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li
-          className="px-[12px] hover:text-[#fe8d32] hover:border-b border-[#fe8d32] rounded-sm"
+          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`events`}
         >
           <Link href="/previousevent">
@@ -35,14 +35,17 @@ const Navbar = () => {
             <div />
           </Link>
         </li>
-        <li
-          className="px-[12px] hover:text-[#fe8d32] hover:border-b border-[#fe8d32] rounded-sm"
+        {/* <li
+          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`membership`}
         >
-          <a href="/notfound">Membership</a>
-        </li>
+          <Link href="/notfound">
+            Membership 
+            <div />
+          </Link>
+        </li> */}
         <li
-          className="px-[12px] hover:text-[#fe8d32] hover:border-b border-[#fe8d32] rounded-sm"
+          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`newsletter`}
         >
           <Link href="/newsletter">
@@ -51,7 +54,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li
-          className="px-[12px] mr-3 hover:text-[#fe8d32] hover:border-b border-[#fe8d32] rounded-sm"
+          className="px-[12px] mr-3 hover:text-[#fe8d32] rounded-sm"
           key={`events`}
         >
           <a href="/team">
