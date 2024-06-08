@@ -16,7 +16,7 @@ const Person = ({ img, name, post, link1, link2 }) => {
           md:hidden
           sm:hidden
           hidden
-          lg:block"
+          lg:block aspect-square object-cover"
       />
       <Image
         src={img}
@@ -26,7 +26,7 @@ const Person = ({ img, name, post, link1, link2 }) => {
           md:block
           sm:hidden
           hidden
-          lg:hidden"
+          lg:hidden aspect-square object-cover"
       />
       <Image
         src={img}
@@ -36,7 +36,7 @@ const Person = ({ img, name, post, link1, link2 }) => {
           md:hidden
           sm:block
           lg:hidden
-          hidden"
+          hidden aspect-square object-cover"
       />
       <Image
         src={img}
@@ -46,7 +46,7 @@ const Person = ({ img, name, post, link1, link2 }) => {
           md:hidden
           sm:hidden
           lg:hidden
-          block"
+          block aspect-square object-cover"
       />
       <h2
         className="justify-self-center 
@@ -74,7 +74,7 @@ const Person = ({ img, name, post, link1, link2 }) => {
         </div>
         <div className="linkedin">
           <a href={link2}>
-            <Image src={linkedin} height={24} width={24} />
+            <Image src={linkedin} height={28} width={28} />
           </a>
         </div>
       </div>

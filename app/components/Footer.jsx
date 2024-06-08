@@ -17,17 +17,25 @@ const Footer = () => {
       <div className="md:mt-0 mt-9 contact">
         <h1 className="text-4xl md:mb-6 mb-3 text-[#ff8000]">Contact Us</h1>
         <div className="text-xl mb-3">
-          <p><a href="tel:8825224208">+91-88252 24208</a></p>
-          <h2>Devanshu Kejriwal</h2>
-          <h6>Vice Chairperson</h6>
+          <p>
+            <a href="tel:8977622044">+91-89776 22044</a>
+          </p>
+          <h2>Srivatsa Palepu</h2>
+          <h6>Chairperson</h6>
         </div>
         <div className="text-xl mb-3">
-          <p><a href="tel:9034953199">+91-90349 53199</a></p>
-          <h2>Lovish Aneja</h2>
-          <h6>General Secretary</h6>
+          <p>
+            <a href="tel:7676176633">+91-76761 76633</a>
+          </p>
+          <h2>Chitransh Saxena</h2>
+          <h6>Vice Chairperson</h6>
         </div>
         <div className="text-xl">
-          <p><a href="mailto:cyber.space@muj.manipal.edu">cyber.space@muj.manipal.edu</a></p>
+          <p>
+            <a href="mailto:cyber.space@muj.manipal.edu">
+              cyber.space@muj.manipal.edu
+            </a>
+          </p>
         </div>
       </div>
       <div className="md:mt-0 mt-9">
@@ -46,10 +54,18 @@ const Footer = () => {
           </h1>
         </div>
         <div className="social-media">
-          <a href="https://www.instagram.com/csc_muj/" rel="noreferrer" className="insta">
+          <a
+            href="https://www.instagram.com/csc_muj/"
+            rel="noreferrer"
+            className="insta"
+          >
             <Image src={insta} height={24} width={24} />
           </a>
-          <a href="https://www.linkedin.com/company/cyber-space-club/" rel="noreferrer" className="linkedin">
+          <a
+            href="https://www.linkedin.com/company/cyber-space-club/"
+            rel="noreferrer"
+            className="linkedin"
+          >
             <Image src={linkedin} height={24} width={24} />
           </a>
         </div>

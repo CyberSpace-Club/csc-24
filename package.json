@@ -1,6 +1,6 @@
 {
-  "name": "csc-23",
-  "version": "0.1.0",
+  "name": "csc-24",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -15,6 +15,7 @@
     "postcss": "^8.4.38",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "sharp": "^0.33.4",
     "swiper": "^10.0.4",
     "tailwindcss": "3.3.3"
   }

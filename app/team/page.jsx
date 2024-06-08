@@ -12,18 +12,23 @@ import UmaShankar from "@/assets/team/people/FacultyCoordinator/DrUmashankarRawa
 import Rohit from "@/assets/team/people/FacultyCoordinator/DrRohitBhatnagar.jpg";
 import AmitKumarBairwa from "@/assets/team/people/FacultyCoordinator/AmitKumarBairwa.jpg";
 import Sanchit from "@/assets/team/people/DSW/SanchitAnand.jpg";
+import vatsa from "@/assets/team/people/execs/SrivatsaPalepu.jpeg";
+import salil from "@/assets/team/people/execs/SalilHiremath.jpg";
+import Kanishk from "@/assets/team/people/execs/Kanishk.jpg";
+import HarshitRawat from "@/assets/team/people/execs/HarshitRawat.jpg";
+import Chitransh from "@/assets/team/people/execs/ChitranshSaxena.jpeg";
+import AditiJain from "@/assets/team/people/execs/Aditijain.jpeg";
+import Chetna from "@/assets/team/people/execs/ChetnaRai.jpeg";
+import HarshKamra from "@/assets/team/people/execs/HarshKamra.jpeg";
 import vansh from "@/assets/team/people/exec/vansh.jpeg";
-import palepu from "@/assets/team/people/exec/palepu.jpeg";
 import dhruv from "@/assets/team/people/exec/dhruv.jpeg";
 import anurag from "@/assets/team/people/exec/anurag.jpeg";
-import salil from "@/assets/team/people/exec/salil.jpg";
 import taveesha from "@/assets/team/people/exec/taveesha.jpeg";
 import devanshu from "@/assets/team/people/exec/DevanshuKejriwal.JPG";
 import anmol from "@/assets/team/people/exec/AnmolGill.jpg";
 import ananyasharma from "@/assets/team/people/exec/ananya.jpeg";
 import Ritika from "@/assets/team/people/exec/RitikaMalhotra.jpeg";
 import ShivendraGoenka from "@/assets/team/people/exec/shivendragoenka.jpeg";
-import AditiJain from "@/assets/team/people/exec/Aditijain.jpg";
 // import HarshitVarma from "@/assets/team/people/exec/HarshitVarma.jpeg";
 import Anushka from "@/assets/team/people/exec/AnushkaShreya.jpg";
 import SRD from "@/assets/team/people/exec/SHIVAMRAJDUBEY.jpeg";
@@ -36,10 +41,7 @@ import ArnavNahar from "@/assets/team/people/exec/ArnavNahar.jpg";
 import Sumit from "@/assets/team/people/exec/sumit.jpeg";
 import AnanyaPatel from "@/assets/team/people/exec/AnanyaPatel.JPG";
 import Karishma from "@/assets/team/people/exec/KarishmaDhyani.jpg";
-import Chetna from "@/assets/team/people/exec/ChetnaRai.jpg";
-import HarshitRawat from "@/assets/team/people/exec/HarshitRawat.jpg";
 import AvniGoel from "@/assets/team/people/exec/AvniGoel.jpg";
-import Chitransh from "@/assets/team/people/exec/ChitranshSaxena.jpg";
 import Ayushman from "@/assets/team/people/exec/AayushmanRanjan.jpeg";
 import Lovish from "@/assets/team/people/exec/lovishaneja.jpeg";
 import Shivang from "@/assets/team/people/exec/ShivangBansal.jpg";
@@ -52,7 +54,7 @@ import Kamya from "@/assets/team/people/exec/Kamya.jpg";
 import Pratyaksh from "@/assets/team/people/exec/PratyakshSinghal.jpg";
 import AryanShah from "@/assets/team/people/exec/AryanShah.jpg";
 import AnandGhugare from "@/assets/team/people/exec/AnandGhugare.jpg";
-import HarshKamra from "@/assets/team/people/exec/HarshKamra.jpg";
+
 import DhruvRathee from "@/assets/team/people/exec/DhruvRathee.jpg";
 import SheryaGupta from "@/assets/team/people/exec/SheryaGupta.jpg";
 import JainilShah from "@/assets/team/people/exec/JainilShah.jpeg";
@@ -197,95 +199,77 @@ const TeamPage = () => {
           block
           lg:hidden"
         />
-        <div className="gap-6 grid grid-flow-row md:grid-cols-3 sm:grid-cols-2 justify-evenly w-[100vw]">
+        <div className="gap-y-7 gap-x-6  grid grid-flow-row md:grid-cols-3 sm:grid-cols-2 justify-evenly w-[100vw]">
           <div className="">
             <Person
-              img={Ayushman}
-              name="Aayushman Ranjan"
+              img={vatsa}
+              name="Srivatsa Palepu"
               post="Chairperson"
-              link1="https://www.linkedin.com/in/aayushmanranjan"
-              link2="https://instagram.com/aayushman024?igshid=NjIwNzIyMDk2Mg=="
+              link1="https://www.linkedin.com/in/srivatsa-palepu-5210a6265"
+              link2="https://www.instagram.com/srivatsa_palepu/?next=%2F"
             />
           </div>
           <div>
             <Person
-              img={devanshu}
-              name="Devanshu Kejriwal"
+              img={Chitransh}
+              name="Chitransh Saxena"
               post="Vice-Chairperson"
-              link1="https://www.linkedin.com/in/devanshu-kejriwal-71700921b"
-              link2="https://instagram.com/dev.kejriwal06?igshid=MjEwN2IyYWYwYw=="
+              link1="https://www.linkedin.com/in/chitranshatlkdin/"
+              link2="https://www.instagram.com/_.chitransh_saxena._/"
             />
           </div>
           <div>
             <Person
-              img={Lovish}
-              name="Lovish Aneja"
+              img={HarshitRawat}
+              name="Harshit Rawat"
               post="General Secretary"
-              link1="https://www.linkedin.com/in/lovish-aneja-b71023269"
-              link2="https://instagram.com/lovish_aneja?igshid=OGQ5ZDc2ODk2ZA=="
+              link1="https://www.linkedin.com/in/harshit-rawat-it/"
+              link2="https://www.instagram.com/harshitt_rawat/"
             />
           </div>
           <div>
             <Person
-              img={anmol}
-              name="Anmol Singh Gill"
+              img={AditiJain}
+              name="Aditi Jain"
               post="Treasurer"
-              link1="https://www.instagram.com/anmol._gill/"
-              link2="https://www.linkedin.com/in/anmol-singh-gill-247506224/"
+              link1="https://www.linkedin.com/in/aditi-jain-09ab53244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              link2="http://instagram.com/aditijain.thv"
             />
           </div>
           <div>
             <Person
-              img={Raunak}
-              name="Raunak Saxena"
+              img={HarshKamra}
+              name="Harsh Kamra"
+              post="Creative Director"
+              link1="https://www.linkedin.com/in/harsh-kamra-a6a53b251?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+              link2="https://instagram.com/itsastrotine"
+            />
+          </div>
+          <div>
+            <Person
+              img={Chetna}
+              name="Chetna Rai"
               post="Managing Director"
-              link1="https://www.linkedin.com/in/raunaksaxena193"
-              link2="https://instagram.com/raunak.saxena.50?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D"
+              link1="https://www.linkedin.com/in/chetnarai682004"
+              link2="https://instagram.com/chetna_rai.684"
             />
           </div>
           <div>
             <Person
-              img={ananyasharma}
-              name="Ananya Sharma"
-              post="Events Director"
-              link1="https://instagram.com/ananyaaaa21?igshid=MmIzYWVlNDQ5Yg=="
-              link2="https://www.linkedin.com/in/ananya-sharma-85a57b231"
-            />
-          </div>
-          <div>
-            <Person
-              img={VishalRai}
-              name="Vishal Rai"
+              img={salil}
+              name="Salil Hiremath"
               post="Human Resource Director"
-              link1="https://www.linkedin.com/in/vishal-rai-770464222"
-              link2="https://jaipur.manipal.edu/foe/schools-faculty/faculty-list/uma-shankar-rawat.html"
+              link1="https://www.linkedin.com/in/salil-hiremath-946784212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              link2="https://www.instagram.com/saaalil?igsh=b2s1a29jdGsyODA4"
             />
           </div>
           <div>
             <Person
-              img={vansh}
-              name="Vansh Dhingra"
-              post="Head of Operation"
-              link1="https://www.linkedin.com/in/vansh-dhingra-866799224"
-              link2="https://instagram.com/vanshdhingra02?igshid=OGQ5ZDc2ODk2ZA=="
-            />
-          </div>
-          <div>
-            <Person
-              img={AdarshDevashish}
-              name="Adarsh Devashish"
+              img={Kanishk}
+              name="Kanishk Valechha"
               post="Webmaster"
-              link1="https://www.instagram.com/adarsh_2403/"
-              link2="https://github.com/AdarshDevashish"
-            />
-          </div>
-          <div>
-            <Person
-              img={AnshPorwal}
-              name="Ansh Porwal"
-              post="Research Head"
-              link1="https://www.linkedin.com/in/ansh-porwal-b428211b8"
-              link2="https://instagram.com/anshporwal31?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+              link1="https://www.linkedin.com/in/kanishk-valechha/"
+              link2="https://www.instagram.com/kanishk_valechha/"
             />
           </div>
         </div>
@@ -335,7 +319,7 @@ const TeamPage = () => {
           </div>
           <div>
             <Person
-              img={palepu}
+              img={vatsa}
               name="Srivatsa Palepu"
               post="Technical Head"
               link1="https://www.linkedin.com/in/srivatsa-palepu-5210a6265"
@@ -512,7 +496,7 @@ const TeamPage = () => {
               img={Akansha}
               name="Akanksha Sinha"
               post="Joint Graphics Head"
-              link1="https://www.linkedin.com/in/umashankar-rawat-41730a48/" //Only Insta userID is provided
+              link1="https://www.linkedin.com/in/umashankar-rawat-41730a48/" //Only Insta userID is provided=
               link2="https://www.linkedin.com/in/akanksha-sinha-a9638a268"
             />
           </div>

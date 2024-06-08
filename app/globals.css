@@ -13,8 +13,8 @@
 .nav {
   background: rgba(0, 0, 0, 0.3);
   box-shadow: 0 8px 32px 0 rgba(79, 80, 90, 0.283);
-  /* backdrop-filter: blur(9px);
-  -webkit-backdrop-filter: blur(9px); */
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
 
@@ -361,8 +361,8 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
     box-shadow: 0 8px 32px 0 rgba(79, 80, 90, 0.283);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: none;

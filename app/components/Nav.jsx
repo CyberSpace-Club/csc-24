@@ -9,18 +9,15 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="grid grid-flow-col grid-cols-2 md:grid-cols-4 fixed justify-center px-6 py-3 border-b-[1px] border-[#f9672d3c] text-white w-[100vw] nav">
+    <nav className="grid grid-flow-col grid-cols-2 md:grid-cols-4 fixed justify-center  px-6 py-3 border-b-[1px] border-[#f9672d3c] text-white w-[100vw] nav z-50">
       <div className="col-span-1">
         <Link href="/">
           {/* <img src={ } alt="logo" /> */}
           <Image width={210} height={210} src="./nav_logo.svg" />
         </Link>
       </div>
-      <ul className="flex col-span-3 justify-self-end justify-center items-center navList self-end">
-        <li
-          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
-          key={`home`}
-        >
+      <ul className="flex col-span-3 justify-self-end justify-center items-center lg:py-2  navList self-end">
+        <li className="px-[12px] hover:text-[#fe8d32] rounded-sm" key={`home`}>
           <Link href="/">
             Home
             <div />
@@ -35,15 +32,15 @@ const Navbar = () => {
             <div />
           </Link>
         </li>
-        {/* <li
+        <li
           className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`membership`}
         >
-          <Link href="/notfound">
-            Membership 
+          <Link href="/membership">
+            Membership
             <div />
           </Link>
-        </li> */}
+        </li>
         <li
           className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`newsletter`}
@@ -62,7 +59,7 @@ const Navbar = () => {
             <div />
           </a>
         </li>
-        <li key={`insta`}>
+        <div key={`insta`}>
           <a
             href="https://www.instagram.com/csc_muj/"
             target="_blank"
@@ -70,7 +67,7 @@ const Navbar = () => {
           >
             <Image src={insta} height={24} width={24} />
           </a>
-        </li>
+        </div>
       </ul>
       <Hamburger />
     </nav>
