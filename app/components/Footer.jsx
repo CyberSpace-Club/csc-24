@@ -66,7 +66,7 @@ const Footer = () => {
             rel="noreferrer"
             className="linkedin"
           >
-            <Image src={linkedin} height={24} width={24} />
+            <Image src={linkedin} height={28} width={28} />
           </a>
         </div>
       </div>

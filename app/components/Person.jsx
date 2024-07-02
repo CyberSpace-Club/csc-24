@@ -68,12 +68,12 @@ const Person = ({ img, name, post, link1, link2 }) => {
       </h3>
       <div className="team-handle">
         <div className="insta">
-          <a href={link1}>
+          <a href={link2}>
             <Image src={insta} height={24} width={24} />
           </a>
         </div>
         <div className="linkedin">
-          <a href={link2}>
+          <a href={link1}>
             <Image src={linkedin} height={28} width={28} />
           </a>
         </div>
