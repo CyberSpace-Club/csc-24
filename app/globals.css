@@ -17,47 +17,43 @@
   -webkit-backdrop-filter: blur(20px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
-  li,
-  a {
-    position: relative;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.2rem;
-    transition: all ease 200ms;
-  }
-
-  ul > li > a:hover {
-    color: #fe8d32;
-  }
-
-  /* a {
-    margin: 0;
-    padding: 0;
-  } */
-
-  ul > li > a:after {
-    content: "";
-    position: absolute;
-    bottom: 0rem;
-    left: 50%;
-    width: 0%;
-    height: 2px;
-    background-color: #fe8d32;
-    transition: width 0.3s ease-out;
-  }
-
-  ul > li > a:hover:after {
-    transform: translateX(-50%);
-    width: 90%;
-  }
-
-  ul > li > a:not(:hover):after {
-    opacity: 0;
-  }
 }
+
+.nav li,
+.nav a {
+  position: relative;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  transition: all ease 200ms;
+}
+
+.nav ul > li > a:hover {
+  color: #fe8d32;
+}
+
+.nav ul > li > a:after {
+  content: "";
+  position: absolute;
+  bottom: 0rem;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #fe8d32;
+  transition: width 0.3s ease-out;
+}
+
+.nav ul > li > a:hover:after {
+  transform: translateX(-50%);
+  width: 90%;
+}
+
+.nav ul > li > a:not(:hover):after {
+  opacity: 0;
+}
+
 /* Footer */
 .contact h6 {
   font-size: 1rem;
