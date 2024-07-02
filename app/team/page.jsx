@@ -848,7 +848,7 @@ const TeamPage = () => {
               name="Muskan Shinghal"
               post="Senior Coordinator of Research"
               link1="http://www.linkedin.com/in/muskanshinghal"
-              link2="https://www.instagram.com/"        //no insta a good human being
+              link2="https://www.instagram.com/" //no insta a good human being
             />
           </div>
         </div>
