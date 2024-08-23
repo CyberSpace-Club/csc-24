@@ -347,7 +347,7 @@ const TeamPage = () => {
           <div>
             <Person
               img={RadhikaSinghal}
-              name="RadhikaSinghal"
+              name="Radhika Singhal"
               post="Technical Head"
               link1="https://www.linkedin.com/in/radhika-singhal-065029202?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
               link2="https://www.instagram.com/radhikasinghall?igsh=dHJyMW1xMzNsY250&utm_source=qr"
@@ -429,7 +429,7 @@ const TeamPage = () => {
           <div>
             <Person
               img={VedicVarma}
-              name="VedicVarma"
+              name="Vedic Varma"
               post="Joint WebMaster"
               link1="https://instagram.com/aditijain.thv?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"
               link2="https://www.linkedin.com/in/aditi-jain-09ab53244"
@@ -663,7 +663,7 @@ const TeamPage = () => {
           <div>
             <Person
               img={ShrashtidDwivedi}
-              name="Shrashtid Dwivedi"
+              name="Shrashti Dwivedi"
               post="Senior Coordinator of Web-Dev"
               link1="https://www.linkedin.com/in/shrashti-dwivedi-663049253"
               link2="https://www.instagram.com/shrasht_i.06?igsh=YjgxMXFubzRlcnpz"
