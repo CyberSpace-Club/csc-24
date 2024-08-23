@@ -303,7 +303,7 @@ const TeamPage = () => {
             <Person
               img={salil}
               name="Salil Hiremath"
-              post="Human Resource Director"
+              post="Managing Director"
               link1="https://www.linkedin.com/in/salil-hiremath-946784212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               link2="https://www.instagram.com/saaalil?igsh=b2s1a29jdGsyODA4"
             />
@@ -682,7 +682,7 @@ const TeamPage = () => {
             <Person
               img={PraneetiSingh}
               name="Praneeti Singh"
-              post="Senior Coordinator Marekting"
+              post="Senior Coordinator Marketing"
               link1="https://www.linkedin.com/" //Not on linkedin lmao
               link2="https://www.instagram.com/praneetisingh?igsh=bzNtNW4xbnczOGNy"
             />
@@ -691,7 +691,7 @@ const TeamPage = () => {
             <Person
               img={SourabhBiswas}
               name="Sourabh Biswas"
-              post="Senior Coordinator Marekting"
+              post="Senior Coordinator Marketing"
               link1="http://www.linkedin.com/in/sourabh-biswas-6b99712b1"
               link2="https://www.instagram.com/so.urabh_6350/"
             />
