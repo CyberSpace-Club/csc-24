@@ -1,76 +1,115 @@
 import React from "react";
-import Logo from "../../assets/cs.svg";
+import { MapPin, Phone, Mail, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
-import insta from "@/assets/insta.png";
-import linkedin from "@/assets/linkedin.png";
-// import bg from "../../assets/footerBackground.svg";
+import Logo from "../../assets/cs.svg";
 
 const Footer = () => {
   return (
-    <div className="text-[#f2f2f2] grid md:grid-flow-col grid-flow-row md:grid-cols-3 md:pr-32 py-9 mx-3 bg-[#0e0e0e] text-center">
-      <div className="justify-self-center">
-        <Image src={Logo} height={150} width={150} />
-        <div>
-          <h1 className="pt-3">CYBER SPACE CLUB</h1>
+    <footer className="bg-[#0e0e0e] text-[#f2f2f2] py-16">
+      <div className="max-w-7xl mx-auto px-4 grid gap-12 md:grid-cols-3">
+        {/* Brand Section */}
+        <div className="space-y-6 text-center md:text-left">
+          <div className="flex flex-col items-center justify-center">
+            {/* Replace with your actual logo */}
+            <div className="w-32 h-32  opacity-90 rounded-lg flex items-center justify-center text-white font-bold">
+              <Image
+                src={Logo}
+                objectFit="contain"
+                className="filter drop-shadow-2xl"
+              />
+            </div>
+            <h2 className="mt-4 text-xl font-bold tracking-wide">
+              CYBER SPACE CLUB
+            </h2>
+          </div>
+        </div>
+
+        {/* Contact Section */}
+        <div className="space-y-8">
+          <h3 className="text-2xl font-bold text-[#ff8000] mb-6">Contact Us</h3>
+
+          <div className="space-y-6">
+            <div className="space-y-2">
+              <div className="flex items-center justify-center md:justify-start space-x-3">
+                <Phone className="w-5 h-5 text-[#ff8000]" />
+                <a
+                  href="tel:8977622044"
+                  className="hover:text-[#ff8000] transition-colors"
+                >
+                  +91-89776 22044
+                </a>
+              </div>
+              <div className="text-sm opacity-80">
+                <p className="font-semibold">Srivatsa Palepu</p>
+                <p className="text-[#ff8000]">Chairperson</p>
+              </div>
+            </div>
+
+            <div className="space-y-2">
+              <div className="flex items-center justify-center md:justify-start space-x-3">
+                <Phone className="w-5 h-5 text-[#ff8000]" />
+                <a
+                  href="tel:7676176633"
+                  className="hover:text-[#ff8000] transition-colors"
+                >
+                  +91-76761 76633
+                </a>
+              </div>
+              <div className="text-sm opacity-80">
+                <p className="font-semibold">Chitransh Saxena</p>
+                <p className="text-[#ff8000]">Vice Chairperson</p>
+              </div>
+            </div>
+
+            <div className="flex items-center justify-center md:justify-start space-x-3">
+              <Mail className="w-5 h-5 text-[#ff8000]" />
+              <a
+                href="mailto:cyber.space@muj.manipal.edu"
+                className="text-sm hover:text-[#ff8000] transition-colors"
+              >
+                cyber.space@muj.manipal.edu
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Address & Social Section */}
+        <div className="space-y-8">
+          <div>
+            <h3 className="text-2xl font-bold text-[#ff8000] mb-6">Location</h3>
+            <div className="flex items-start justify-center md:justify-start space-x-3">
+              <MapPin className="w-5 h-5 text-[#ff8000] mt-1 flex-shrink-0" />
+              <p className="text-sm opacity-80">
+                Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza,
+                Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold text-[#ff8000] mb-6">Connect</h3>
+            <div className="flex items-center justify-center md:justify-start space-x-4">
+              <a
+                href="https://www.instagram.com/csc_muj/"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 hover:bg-[#ff8000] rounded-full transition-colors"
+              >
+                <Instagram className="w-6 h-6" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/cyber-space-club/"
+                target="_blank"
+                rel="noreferrer"
+                className="p-2 hover:bg-[#ff8000] rounded-full transition-colors"
+              >
+                <Linkedin className="w-6 h-6" />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="md:mt-0 mt-9 contact">
-        <h1 className="text-4xl md:mb-6 mb-3 text-[#ff8000]">Contact Us</h1>
-        <div className="text-xl mb-3">
-          <p>
-            <a href="tel:8977622044">+91-89776 22044</a>
-          </p>
-          <h2>Srivatsa Palepu</h2>
-          <h6>Chairperson</h6>
-        </div>
-        <div className="text-xl mb-3">
-          <p>
-            <a href="tel:7676176633">+91-76761 76633</a>
-          </p>
-          <h2>Chitransh Saxena</h2>
-          <h6>Vice Chairperson</h6>
-        </div>
-        <div className="text-xl">
-          <p>
-            <a href="mailto:cyber.space@muj.manipal.edu">
-              cyber.space@muj.manipal.edu
-            </a>
-          </p>
-        </div>
-      </div>
-      <div className="md:mt-0 mt-9">
-        <div>
-          <h1 className="text-4xl md:mb-6 mb-3 text-[#ff8000]">Address</h1>
-        </div>
-        <div>
-          <p className="text-lg mb-3">
-            Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza,
-            Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007
-          </p>
-        </div>
-        <div>
-          <h1 className="text-4xl md:mt-0 mt-9 mb:3 text-[#ff8000]">
-            Social Media
-          </h1>
-        </div>
-        <div className="social-media">
-          <a
-            href="https://www.instagram.com/csc_muj/"
-            rel="noreferrer"
-            className="insta"
-          >
-            <Image src={insta} height={24} width={24} />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/cyber-space-club/"
-            rel="noreferrer"
-            className="linkedin"
-          >
-            <Image src={linkedin} height={28} width={28} />
-          </a>
-        </div>
-      </div>
-    </div>
+    </footer>
   );
 };
 
