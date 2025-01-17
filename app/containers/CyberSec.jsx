@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Shield, Lock, Eye, Server, Database } from "lucide-react";
+import Coding from "../../assets/coding.jpg";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
@@ -84,7 +85,7 @@ const CyberSec = () => {
             >
               <div className="relative z-10">
                 <Image
-                  src={Eye}
+                  src={Coding}
                   height={500}
                   width={500}
                   className="rounded-lg border-2 border-[#fe8c32] shadow-2xl shadow-[#fe8c32]/20"
