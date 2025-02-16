@@ -3,35 +3,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ParticlesBackground } from "../components/ParticlesBackground";
-
-const events = [
-  {
-    id: 1,
-    name: "Cyber Security Workshop 2024",
-    image: "/events/event1.jpg",
-    description:
-      "Join us for an intensive workshop on modern cyber security practices. Learn about threat detection, prevention, and the latest security tools.",
-    date: "March 15, 2024",
-    location: "Virtual Event",
-    registrationLink: "https://example.com/register",
-  },
-  {
-    id: 2,
-    name: "Ethical Hacking Bootcamp",
-    image: "/events/event2.jpg",
-    description:
-      "A hands-on bootcamp covering ethical hacking methodologies, penetration testing, and security assessments.",
-    date: "April 20, 2024",
-    location: "MUJ Campus",
-    registrationLink: "https://example.com/register",
-  },
-  {
-    id: 3,
-    name: "CTF Competition",
-    image: "/events/event3.jpg",
-  },
-  // Add more events as needed
-];
+import { events } from "@/data/events";
 
 const EventModal = ({ event, onClose }) => {
   if (!event) return null;
@@ -90,7 +62,7 @@ const EventModal = ({ event, onClose }) => {
   );
 };
 
-const EventCard = ({ name, image, index, onClick }) => {
+const EventCard = ({ event, index, onClick }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -102,14 +74,26 @@ const EventCard = ({ name, image, index, onClick }) => {
       <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
         <Image
-          src={image}
-          alt={name}
+          src={event.image}
+          alt={event.name}
           layout="fill"
           objectFit="cover"
           className="group-hover:scale-110 transition-transform duration-300"
         />
         <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
-          <h3 className="text-2xl font-bold text-white">{name}</h3>
+          <h3 className="text-2xl font-bold text-white">{event.name}</h3>
+          {event.tags && (
+            <div className="flex gap-2 mt-2">
+              {event.tags.map((tag, i) => (
+                <span
+                  key={i}
+                  className="text-sm bg-black/50 text-gray-300 px-2 py-1 rounded"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
         </div>
       </div>
     </motion.div>
@@ -134,7 +118,7 @@ const PreviousEvents = () => {
           {events.map((event, index) => (
             <EventCard
               key={event.id}
-              {...event}
+              event={event}
               index={index}
               onClick={() => setSelectedEvent(event)}
             />
