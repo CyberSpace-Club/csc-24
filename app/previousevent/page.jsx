@@ -13,39 +13,44 @@ const EventModal = ({ event, onClose }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4 overflow-y-auto"
       onClick={onClose}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="bg-[#1a1a1a] rounded-xl max-w-3xl w-full overflow-hidden"
+        className="bg-[#1a1a1a] rounded-xl w-full max-w-[90%] sm:max-w-2xl overflow-hidden my-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative h-[300px]">
+        <div className="relative h-[400px] xs:h-[450px] sm:h-[500px] md:h-[600px]">
           <Image
             src={event.image}
             alt={event.name}
-            layout="fill"
-            objectFit="cover"
+            fill
+            priority
+            className="object-contain p-2"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
         </div>
-        <div className="p-6">
-          <h2 className="text-3xl font-bold text-white mb-2">{event.name}</h2>
-          <div className="flex gap-4 text-gray-400 mb-4">
+        <div className="p-4 sm:p-6">
+          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+            {event.name}
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-gray-400 mb-4 text-sm sm:text-base">
             <p>{event.date}</p>
-            <p>•</p>
+            <p className="hidden sm:block">•</p>
             <p>{event.location}</p>
           </div>
-          <p className="text-gray-300 mb-6">{event.description}</p>
-          <div className="flex gap-4">
+          <p className="text-gray-300 mb-6 text-sm sm:text-base">
+            {event.description}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <a
               href={event.registrationLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-2 bg-gradient-to-r from-[#fe8d32] to-[#f8be19] rounded-lg text-white font-semibold hover:opacity-90 transition-opacity"
+              className="px-6 py-2 bg-gradient-to-r from-[#fe8d32] to-[#f8be19] rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-center"
             >
               Register Now
             </a>
@@ -71,23 +76,23 @@ const EventCard = ({ event, index, onClick }) => {
       className="relative group cursor-pointer"
       onClick={onClick}
     >
-      <div className="relative h-[400px] w-full overflow-hidden rounded-xl">
+      <div className="relative h-[500px] w-full overflow-hidden rounded-xl">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10" />
         <Image
           src={event.image}
           alt={event.name}
-          layout="fill"
-          objectFit="cover"
-          className="group-hover:scale-110 transition-transform duration-300"
+          fill
+          priority
+          className="group-hover:scale-105 transition-transform duration-300 object-contain bg-black/40"
         />
-        <div className="absolute bottom-0 left-0 right-0 p-6 z-20">
+        <div className="absolute bottom-0 left-0 right-0 p-6 z-20 bg-gradient-to-t from-black/90 via-black/50 to-transparent">
           <h3 className="text-2xl font-bold text-white">{event.name}</h3>
           {event.tags && (
-            <div className="flex gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2">
               {event.tags.map((tag, i) => (
                 <span
                   key={i}
-                  className="text-sm bg-black/50 text-gray-300 px-2 py-1 rounded"
+                  className="text-sm bg-black/50 text-gray-300 px-2 py-1 rounded backdrop-blur-sm"
                 >
                   {tag}
                 </span>
@@ -106,7 +111,7 @@ const PreviousEvents = () => {
   return (
     <div className="min-h-screen bg-[#0a0a0a] relative">
       <ParticlesBackground />
-      <div className="container mx-auto px-4 py-16 relative z-10">
+      <div className="container mx-auto px-4 py-16 pt-24 relative z-10">
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
