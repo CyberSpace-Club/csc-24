@@ -23,7 +23,7 @@ const Navbar = () => {
             <div />
           </Link>
         </li>
-        {/* <li
+        <li
           className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`events`}
         >
@@ -32,7 +32,7 @@ const Navbar = () => {
             <div />
           </Link>
         </li>
-        <li
+        {/* <li
           className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`membership`}
         >
