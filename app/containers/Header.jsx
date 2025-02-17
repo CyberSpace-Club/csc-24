@@ -49,9 +49,9 @@ const Header = () => {
           >
             <Image
               src={LogoGif}
-              layout="fill"
-              objectFit="contain"
-              className="filter drop-shadow-2xl"
+              fill
+              priority
+              className="filter drop-shadow-2xl object-contain"
             />
           </motion.div>
 

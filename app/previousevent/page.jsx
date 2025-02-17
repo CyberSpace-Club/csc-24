@@ -13,17 +13,17 @@ const EventModal = ({ event, onClose }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 sm:p-4 overflow-y-auto"
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-2 overflow-y-auto"
       onClick={onClose}
     >
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.9, opacity: 0 }}
-        className="bg-[#1a1a1a] rounded-xl w-full max-w-[90%] sm:max-w-2xl overflow-hidden my-4"
+        className="bg-[#1a1a1a] rounded-xl w-full max-w-[95%] sm:max-w-lg overflow-hidden my-2 sm:my-4"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="relative h-[400px] xs:h-[450px] sm:h-[500px] md:h-[600px]">
+        <div className="relative h-[350px] xs:h-[400px] sm:h-[450px]">
           <Image
             src={event.image}
             alt={event.name}
@@ -33,19 +33,19 @@ const EventModal = ({ event, onClose }) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#1a1a1a] via-transparent to-transparent" />
         </div>
-        <div className="p-4 sm:p-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
+        <div className="p-3 sm:p-4">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
             {event.name}
           </h2>
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 text-gray-400 mb-4 text-sm sm:text-base">
+          <div className="flex flex-col sm:flex-row gap-1 sm:gap-3 text-gray-400 mb-3 text-sm">
             <p>{event.date}</p>
             <p className="hidden sm:block">•</p>
             <p>{event.location}</p>
           </div>
-          <p className="text-gray-300 mb-6 text-sm sm:text-base">
+          <p className="text-gray-300 mb-4 text-sm leading-relaxed">
             {event.description}
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+          <div className="flex flex-col xs:flex-row gap-2 sm:gap-3">
             <a
               href={event.registrationLink}
               target="_blank"

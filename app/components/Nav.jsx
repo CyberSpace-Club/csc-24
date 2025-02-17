@@ -6,17 +6,20 @@ import insta from "@/assets/insta.png";
 import Hamburger from "@/app/components/Hamburger.jsx";
 
 const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <nav className="grid grid-flow-col grid-cols-2 md:grid-cols-4 fixed justify-center  px-6 py-3 border-b-[1px] border-[#f9672d3c] text-white w-[100vw] nav z-50">
       <div className="col-span-1">
         <Link href="/">
-          {/* <img src={ } alt="logo" /> */}
-          <Image width={210} height={210} src="./nav_logo.svg" />
+          <Image width={210} height={210} src="./nav_logo.svg" alt="logo" />
         </Link>
       </div>
-      <ul className="flex col-span-3 justify-self-end justify-center items-center lg:py-2  navList self-end">
+      <ul className="hidden md:flex col-span-3 justify-self-end justify-center items-center lg:py-2  navList self-end">
         <li className="px-[12px] hover:text-[#fe8d32] rounded-sm" key={`home`}>
           <Link href="/">
             Home
@@ -32,15 +35,6 @@ const Navbar = () => {
             <div />
           </Link>
         </li>
-        {/* <li
-          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
-          key={`membership`}
-        >
-          <Link href="/membership">
-            Membership
-            <div />
-          </Link>
-        </li> */}
         <li
           className="px-[12px] hover:text-[#fe8d32] rounded-sm"
           key={`newsletter`}
@@ -69,7 +63,7 @@ const Navbar = () => {
           </a>
         </div>
       </ul>
-      <Hamburger />
+      <Hamburger isOpen={isMenuOpen} toggleMenu={toggleMenu} />
     </nav>
   );
 };
