@@ -29,7 +29,7 @@ const CyberSec = () => {
         >
           <h2 className="text-6xl font-bold text-white mb-16 relative">
             What is
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#fe8c32] to-[#f8be19]">
+            <span className="block text-transparent bg-clip-text bg-linear-to-r from-[#fe8c32] to-[#f8be19]">
               Cyber Security?
             </span>
           </h2>
@@ -91,7 +91,7 @@ const CyberSec = () => {
                   className="rounded-lg border-2 border-[#fe8c32] shadow-2xl shadow-[#fe8c32]/20"
                   alt="Cyber Security Illustration"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent rounded-lg" />
+                <div className="absolute inset-0 bg-linear-to-tr from-black/40 to-transparent rounded-lg" />
               </div>
             </motion.div>
           </div>

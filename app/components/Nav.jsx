@@ -20,14 +20,14 @@ const Navbar = () => {
         </Link>
       </div>
       <ul className="hidden md:flex col-span-3 justify-self-end justify-center items-center lg:py-2  navList self-end">
-        <li className="px-[12px] hover:text-[#fe8d32] rounded-sm" key={`home`}>
+        <li className="px-[12px] hover:text-[#fe8d32] rounded-xs" key={`home`}>
           <Link href="/">
             Home
             <div />
           </Link>
         </li>
         <li
-          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
+          className="px-[12px] hover:text-[#fe8d32] rounded-xs"
           key={`events`}
         >
           <Link href="/previousevent">
@@ -36,7 +36,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li
-          className="px-[12px] hover:text-[#fe8d32] rounded-sm"
+          className="px-[12px] hover:text-[#fe8d32] rounded-xs"
           key={`newsletter`}
         >
           <Link href="/newsletter">
@@ -45,7 +45,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li
-          className="px-[12px] mr-3 hover:text-[#fe8d32] rounded-sm"
+          className="px-[12px] mr-3 hover:text-[#fe8d32] rounded-xs"
           key={`events`}
         >
           <a href="/team">
