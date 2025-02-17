@@ -84,7 +84,7 @@ const Hamburger = ({ isOpen, toggleMenu }) => {
         variants={menuVariants}
         initial="closed"
         animate={isOpen ? "open" : "closed"}
-        className="fixed top-0 right-0 w-full h-screen bg-gradient-to-b from-black to-black/95 z-40 flex flex-col justify-center items-center"
+        className="fixed top-0 right-0 w-full h-screen bg-linear-to-b from-black to-black/95 z-40 flex flex-col justify-center items-center"
       >
         <motion.div
           variants={container}

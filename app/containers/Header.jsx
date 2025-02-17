@@ -62,7 +62,7 @@ const Header = () => {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="space-y-4 mb-12"
           >
-            <h1 className="text-5xl font-bold bg-gradient-to-r from-[#fe8d32] to-[#f8be19] text-transparent bg-clip-text">
+            <h1 className="text-5xl font-bold bg-linear-to-r from-[#fe8d32] to-[#f8be19] text-transparent bg-clip-text">
               CYBER SPACE CLUB
             </h1>
             <h2 className="text-2xl text-gray-300">
@@ -115,7 +115,7 @@ const Header = () => {
               </button>
             </Link>
             <Link href="/notfound">
-              <button className="group relative px-8 py-3 text-lg font-medium rounded-md bg-gradient-to-r from-[#fe8d32] to-[#f8be19] text-white hover:shadow-lg hover:shadow-[#fe8d32]/50 transition-all duration-300">
+              <button className="group relative px-8 py-3 text-lg font-medium rounded-md bg-linear-to-r from-[#fe8d32] to-[#f8be19] text-white hover:shadow-lg hover:shadow-[#fe8d32]/50 transition-all duration-300">
                 Join Us
                 <ChevronRight className="inline-block ml-2 group-hover:translate-x-1 transition-transform" />
               </button>

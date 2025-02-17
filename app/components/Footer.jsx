@@ -78,7 +78,7 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold text-[#ff8000] mb-6">Location</h3>
             <div className="flex items-start justify-center md:justify-start space-x-3">
-              <MapPin className="w-5 h-5 text-[#ff8000] mt-1 flex-shrink-0" />
+              <MapPin className="w-5 h-5 text-[#ff8000] mt-1 shrink-0" />
               <p className="text-sm opacity-80">
                 Manipal University Jaipur, Dehmi Kalan, Near GVK Toll Plaza,
                 Jaipur-Ajmer Expressway, Jaipur, Rajasthan 303007

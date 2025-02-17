@@ -45,7 +45,7 @@ const AboutUs = () => {
                   className="transition-transform duration-500 group-hover:scale-105"
                   alt="About Us Logo"
                 />
-                <div className="absolute inset-0 bg-gradient-to-tr from-[#fe8c32]/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="absolute inset-0 bg-linear-to-tr from-[#fe8c32]/20 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
 
@@ -57,7 +57,7 @@ const AboutUs = () => {
               variants={fadeInUp}
               className="text-left space-y-6"
             >
-              <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#fe8c32] to-[#f8be19]">
+              <h3 className="text-4xl font-bold text-transparent bg-clip-text bg-linear-to-r from-[#fe8c32] to-[#f8be19]">
                 CYBER SPACE CLUB
               </h3>
               <p className="text-xl text-gray-300 leading-relaxed">

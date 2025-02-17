@@ -10,13 +10,6 @@ const MontserratFont = Montserrat({
   variable: "--font-sans",
 });
 
-
-
-// const kodchasan = Kodchasan({
-//   subsets: ["latin"],
-//   weight: "400",
-// });
-
 export const metadata = {
   title: "CSC MUJ",
   description: "Cyber Space Club, Manipal University Jaipur",
