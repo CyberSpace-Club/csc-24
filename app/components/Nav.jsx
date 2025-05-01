@@ -30,7 +30,7 @@ const Navbar = () => {
           className="px-[12px] hover:text-[#fe8d32] rounded-xs"
           key={`events`}
         >
-          <Link href="/previousevent">
+          <Link href="/event">
             Events
             <div />
           </Link>
