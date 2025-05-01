@@ -7,6 +7,9 @@ import { events } from "@/data/events";
 
 const EventModal = ({ event, onClose }) => {
   if (!event) return null;
+  
+  // Check if the event date is in the past
+  const isPastEvent = new Date(event.date) < new Date();
 
   return (
     <motion.div
@@ -46,14 +49,20 @@ const EventModal = ({ event, onClose }) => {
             {event.description}
           </p>
           <div className="flex flex-col xs:flex-row gap-2 sm:gap-3">
-            <a
-              href={event.registrationLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-2 bg-linear-to-r from-[#fe8d32] to-[#f8be19] rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-center"
-            >
-              Register Now
-            </a>
+            {!isPastEvent ? (
+              <a
+                href={event.registrationLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-2 bg-linear-to-r from-[#fe8d32] to-[#f8be19] rounded-lg text-white font-semibold hover:opacity-90 transition-opacity text-center"
+              >
+                Register Now
+              </a>
+            ) : (
+              <span className="px-6 py-2 bg-gray-700 rounded-lg text-gray-300 text-center cursor-not-allowed">
+                Registration Closed
+              </span>
+            )}
             <button
               onClick={onClose}
               className="px-6 py-2 border border-gray-600 rounded-lg text-gray-300 hover:bg-gray-800 transition-colors"
@@ -107,6 +116,15 @@ const EventCard = ({ event, index, onClick }) => {
 
 const PreviousEvents = () => {
   const [selectedEvent, setSelectedEvent] = useState(null);
+  const [showPastEvents, setShowPastEvents] = useState(false);
+  
+  // Separate past and upcoming events
+  const currentDate = new Date();
+  const upcomingEvents = events.filter(event => new Date(event.date) >= currentDate);
+  const pastEvents = events.filter(event => new Date(event.date) < currentDate);
+  
+  // Display events based on the selected tab
+  const displayEvents = showPastEvents ? pastEvents : upcomingEvents;
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] relative">
@@ -115,20 +133,47 @@ const PreviousEvents = () => {
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-5xl font-bold text-center mb-16 bg-linear-to-r from-[#fe8d32] to-[#f8be19] text-transparent bg-clip-text"
+          className="text-5xl font-bold text-center mb-8 bg-linear-to-r from-[#fe8d32] to-[#f8be19] text-transparent bg-clip-text"
         >
           Our Events
         </motion.h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {events.map((event, index) => (
-            <EventCard
-              key={event.id}
-              event={event}
-              index={index}
-              onClick={() => setSelectedEvent(event)}
-            />
-          ))}
+        
+        {/* Tab selector for past and upcoming events */}
+        <div className="flex justify-center mb-12">
+          <div className="bg-[#1a1a1a] rounded-full p-1 flex">
+            <button 
+              onClick={() => setShowPastEvents(false)}
+              className={`px-6 py-2 rounded-full transition-all ${!showPastEvents ? 'bg-linear-to-r from-[#fe8d32] to-[#ce9700] text-white' : 'text-gray-400 hover:text-white'}`}
+            >
+              Upcoming Events
+            </button>
+            <button 
+              onClick={() => setShowPastEvents(true)}
+              className={`px-6 py-2 rounded-full transition-all ${showPastEvents ? 'bg-linear-to-r from-[#fe8d32] to-[#ce9700] text-white' : 'text-gray-400 hover:text-white'}`}
+            >
+              Past Events
+            </button>
+          </div>
         </div>
+        
+        {displayEvents.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {displayEvents.map((event, index) => (
+              <EventCard
+                key={event.id}
+                event={event}
+                index={index}
+                onClick={() => setSelectedEvent(event)}
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-16">
+            <p className="text-gray-400 text-xl">
+              Coming Soon
+            </p>
+          </div>
+        )}
       </div>
       <AnimatePresence>
         {selectedEvent && (
