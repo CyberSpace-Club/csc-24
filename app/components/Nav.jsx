@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import insta from "@/assets/insta.png";
+import LinkedIn from "@/assets/linkedin.png";
 import Hamburger from "@/app/components/Hamburger.jsx";
 
 const Navbar = () => {
@@ -60,6 +61,15 @@ const Navbar = () => {
             rel="noreferrer"
           >
             <Image src={insta} height={24} width={24} />
+          </a>
+        </div>
+        <div key={`LinkedIn`} className="pl-4">
+          <a
+            href="https://www.linkedin.com/company/cyber-space-club/posts/?feedView=all"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image src={LinkedIn} height={30} width={30} />
           </a>
         </div>
       </ul>

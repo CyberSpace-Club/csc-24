@@ -308,15 +308,15 @@ const TeamPage = () => {
               link2="https://www.instagram.com/saaalil?igsh=b2s1a29jdGsyODA4"
             />
           </div>
-        </div>
-        <div className="mt-7">
-          <Person
-            img={Kanishk}
-            name="Kanishk Valechha"
-            post="Webmaster"
-            link1="https://www.linkedin.com/in/kanishk-valechha/"
-            link2="https://www.instagram.com/kanishk_valechha/"
-          />
+            <div>
+              <Person
+                img={Kanishk}
+                name="Kanishk Valechha"
+                post="Webmaster"
+                link1="https://www.linkedin.com/in/kanishk-valechha/"
+                link2="https://www.instagram.com/kanishk_valechha/"
+              />
+            </div>
         </div>
       </div>
       <div className="pageSeparator" />
