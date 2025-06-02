@@ -40,7 +40,7 @@ const Hamburger = ({ isOpen, toggleMenu }) => {
 
   const menuItems = [
     { href: "/", label: "Home" },
-    { href: "/previousevent", label: "Events" },
+    { href: "/event", label: "Events" },
     { href: "/newsletter", label: "Newsletter" },
     { href: "/team", label: "Team" },
   ];
